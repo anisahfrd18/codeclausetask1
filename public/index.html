@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="chat-container">
+        <!-- Welcome Heading with color #8ACDD7 -->
+        <h1 style="color: #EDB7ED;">Welcome to Chatroom!</h1>
+
+        <!-- Room Selection Dropdown and Join Button -->
+        <select id="room-select">
+            <option value="Room1">Room 1</option>
+            <option value="Room2">Room 2</option>
+        </select>
+        <button id="join-room">Join Room</button>
+
+        <!-- Chat Box and Message Input -->
+        <div id="chat-box"></div>
+        <input id="message-input" type="text" placeholder="Type a message...">
+        <button id="send-message">Send</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
